@@ -2,12 +2,13 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 
 interface ButtonPrimaryProps {
+  name : string,
   className?: string;
 }
 
-const ButtonPrimary : React.FC< ButtonPrimaryProps> = ({ className }) => {
+const ButtonPrimary : React.FC< ButtonPrimaryProps> = ({ name, className }) => {
   return (
-    <Button>Sign In</Button>
+    <Button>{name}</Button>
   );
 };
 

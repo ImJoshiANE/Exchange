@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.className} antialiased`}
+        className={`!${montserrat.className} antialiased`}
       >
         <Header className="p-3 mb-8"/>
         {children}

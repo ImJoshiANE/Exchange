@@ -1,7 +1,7 @@
 import React from "react";
 import ButtonPrimary from "./button/ButtonPrimary";
 import ButtonSecondary from "./button/ButtonSecondary";
-
+import { Input } from "./ui/input";
 interface Headerprops {
   className?: string;
 }
@@ -14,9 +14,10 @@ const Header : React.FC<Headerprops> = ({className}) => {
       <h2 className="font-bold mr-4   text-lg">Exchange</h2>
       <h3 className="font-bold">Market</h3>
       </div>
+      <Input type="text" placeholder="Search Assets" className="w-[50%]" />
       <div className="flex">
-        <ButtonSecondary className="mr-4" />
-        <ButtonPrimary className="mr-4" />
+        <ButtonSecondary name="Log In" className="mr-4" />
+        <ButtonPrimary name="Sign In" className="mr-4" />
       </div>
     </div>
   );

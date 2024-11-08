@@ -1,5 +1,4 @@
 import AssetList from "@/components/AssetList";
-import Image from "next/image";
 
 export default function Home() {
   return (
